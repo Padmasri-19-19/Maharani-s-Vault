@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<!-- Optional Slick Theme -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--foter-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!--header-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+   
+<!-- Navigation Bar -->
+<header class="navbar">
+  <div class="nav-logo">
+    <img src="maha.jpeg" alt="">
+    
+  </div>
+  <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+
+    <!-- Header Icons Section -->
+<div class="header-icons">
+  <a href="#" title="Search"><i class="fas fa-search"></i></a>
+  <a href="#" title="My Account"><i class="fas fa-user"></i></a>
+  <a href="#" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+</div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+
+<!--gold section-->
+  <section id="home" class="gold-section">
+    
+    <div class="image-container">
+       <h1>Maharani’s Vault</h1>
+      <img src="banner.png" alt="Gold Jewellery">
+    </div>
+   
+    <div class="content-container">
+      
+      <h1>Adorned by Tradition, Crafted in Gold</h1>
+      <p>
+        Discover the timeless beauty of handcrafted gold jewellery, inspired by centuries-old traditions 
+        and designed for the modern soul. Each piece is a tribute to heritage, artistry, and the cultural 
+        richness that adorns every celebration.
+      </p>
+      <button onclick="shopNow()">Shop Now</button>
+    </div>
+  </section>
+  </header>
+
+
+<!--pluging-->
+
+  <div id="products"   class="jewelry-menu">
+  <div><img src="chain.jpg" alt="Gold Chains"></div>
+  <div><img src="necklace.jpeg" alt="Necklaces"></div>
+  <div><img src="bracelet.png" alt="Bracelets"></div>
+  <div><img src="ring.png" alt="Rings"></div>
+  <div><img src="earring.jpg" alt="Earrings"></div>
+  <div><img src="wedding.jpeg" alt="Wedding Sets"></div>
+  <div><img src="pendanta.jpg" alt="Pendants"></div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.jewelry-menu').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      infinite: true,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  });
+</script>
+
+
+
+<!--collections-->
+<section id="collections" class="section">
+    <h2>Maharani’s Vault collection</h2>
+    <p>Explore our newly launched collection</p>
+    <div class="product-grid">
+      <!-- Collection 1 -->
+      <div class="product-card">
+        <img src="earrings.png" alt="Necklaces">
+        <h3>Earrings Collection</h3>
+        <p>"Classic and designer diamond earrings crafted to add elegance to every look."</p>
+        <a href="index9.html"><button>Shop Now</button></a>
+      </div>
+
+      <!-- Collection 2 -->
+      <div class="product-card">
+        <img src="pendants.png" alt="Earring">
+        <h3>Pendants Collection</h3>
+        <p>"Elegant diamond pendants, blending heritage detailing with contemporary style."</p>
+        <a href="index8.html"><button>Shop Now</button></a>
+      </div>
+
+      <!-- Collection 3 -->
+      <div class="product-card">
+        <img src="bangles.jpg" alt="Bracelets">
+        <h3>Bangles Collection</h3>
+        <p>"Classic and designer gold & diamond bangles crafted to elevate your everyday and festive looks."</p>
+        <a href="index7.html"><button>Shop Now</button></a>
+      </div>
+
+     
+    </div>
+  </section>
+
+<!--trending-->
+  <h1>Find Your Perfect Match</h1>
+  <p>Shop by Categories</p>
+  <div class="trending-container">
+    <div class="item" onclick="openCollection('necklaces')">
+      <img src="Tnecklace.png" alt="Necklace" />
+      <p>Necklaces</p>
+    </div>
+    <div class="item" onclick="openCollection('rings')">
+      <img src="Tring.jpg" alt="Ring" />
+      <p>Rings</p>
+    </div>
+    <div class="item" onclick="openCollection('bracelets')">
+      <img src="Tbracelet.jpg" alt="bracelets" />
+      <p>Bracelets</p>
+    </div>
+    
+    <div class="item" onclick="openCollection('maangtikka')">
+      <img src="Tmanngtikka.png" alt="maangtikka" />
+      <p>Maangtikka</p>
+    </div>
+    <div class="item" onclick="openCollection('mangalasutra')">
+      <img src="Tmangalasutra2.jpg" alt="mangalasutra" />
+      <p>Mangalasutra</p>
+    </div>
+    <div class="item" onclick="openCollection('chains')">
+      <img src="Tchain.jpeg" alt="chains" />
+      <p>Chains</p>
+    </div>
+    <div class="item" onclick="openCollection('viewall')">
+      <img src="Tviewall.png" alt="viewall" />
+      <p>Viewall</p>
+    </div>
+  </div>
+
+  <script>
+    function openCollection(category) {
+      window.location.href = `index2.html?category=${category}`;
+    }
+  </script>
+
+
+
+  <!--bottom -->
+  <h1>Maharani’s Vault World</h1>
+  <p>A companion for every occasion</p>
+  <div class="main-container">
+  <div class="left-image" onclick="navigateTo('index4.html')">
+    <img src="weddingimage.png" alt="Wedding Collection">
+    <div class="caption">Wedding</div>
+  </div>
+
+  <div class="right-images">
+    <div onclick="navigateTo('index3.html')">
+      <img src="diamondimage.png" alt="Diamond Collection">
+      <div class="caption">Diamonds</div>
+    </div>
+    <div onclick="navigateTo('index5.html')">
+      <img src="goldimage.jpeg" alt="Gold Collection">
+      <div class="caption">Gold</div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+  <!-- Footer Section -->
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- About -->
+    <div id="about"  class="footer-section">
+      <h3>About</h3>
+      <p>Discover timeless elegance with our handcrafted gold jewelry. Inspired by tradition, made for today.</p>
+    </div>
+
+    <!-- Shop -->
+    <div class="footer-section">
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="#">Necklaces</a></li>
+        <li><a href="#">Earrings</a></li>
+        <li><a href="#">Bracelets</a></li>
+        <li><a href="#">Rings</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div class="footer-section">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">Jewelry Care</a></li>
+        <li><a href="#">Size Guide</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Us -->
+    <div id="contact" class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: support@Maharani’s Vault.com</p>
+      <p>Phone: +1 (800) 123-4567</p>
+      <p>Address: 123 Gold Street, AP, INDIA</p>
+    </div>
+
+
+    
+  </div>
+<div>
+<div class="newsletter-container">
+  <h3 class="newsletter-title">Stay Connected</h3>
+  <p class="newsletter-text">Join our newsletter for exclusive offers and early access to new collections.</p>
+  
+  <form class="newsletter-form" action="#" method="POST">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Your email" 
+      required
+      class="newsletter-input"
+    />
+    <button type="submit" class="btn-gold">Sign Up</button>
+  </form>
+</div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Maharani’s Vault. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

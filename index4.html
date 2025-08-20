@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+       <img src="maha.jpeg" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#wedding">Wedding</a></li>
+    </ul>
+  </nav>
+     <h1>Wedding Collection</h1>
+  <div class="items">
+   
+    <div class="item">
+      <img src="wedding4.jpeg" alt="Wedding">
+      <div class="item-name">Shubha Sparsh Haram</div>
+        <p class="price">₹4,78,789</p>
+        <button onclick="orderNow('Shubha Sparsh Haram')">Order Now</button>
+    </div>
+     <div class="item">
+      <img src="wedding2.png" alt="Wedding">
+      <div class="item-name">Divine Goddess Lakshmi Haram</div>
+         <p  class="price">₹3,88,500</p>
+        <button onclick="orderNow('Divine Goddess Lakshmi Haram')">Order Now</button>
+    </div>
+    <div class="item">
+      <img src="wedding1.png" alt="Wedding">
+      <div class="item-name">Ashta Lakshmi Gold Haram</div>
+         <p  class="price">₹4,69,198</p>
+        <button onclick="orderNow('Ashta Lakshmi Gold Haram Set')">Order Now</button>
+    </div>
+     <div class="item">
+      <img src="wedding3.png" alt="Wedding">
+      <div class="item-name">Regal Lakshmi Gold Haram Set</div>
+         <p  class="price">₹7,88,500</p>
+        <button onclick="orderNow('Regal Lakshmi Gold Haram Set')">Order Now</button>
+    </div>
+  </div>
+
+ <script>
+    function orderNow(product) {
+      alert(`You selected: ${product}\nWe will contact you for order confirmation.`);
+    }
+  </script>
+
+
+
+</body>
+</html>

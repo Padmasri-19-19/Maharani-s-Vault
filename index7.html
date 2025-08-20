@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">
+       <img src="maha.jpeg" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#bangles">Bangles</a></li>
+    </ul>
+  </nav>
+
+  <section id="bangles" class="section">
+    <h2>Bangles Collection</h2>
+    <div class="product-grid">
+        <div class="product-card">
+        <img src="BAN1.jpg" alt="">
+        <h3>Luxe Curves Diamond Bangle</h3>
+        <p>₹2,88,500</p>
+        <button onclick="orderNow('Luxe Curves Diamond Bangle')">Order Now</button>
+      </div>
+        <div class="product-card">
+        <img src="BAN3.jpg" alt="">
+        <h3>Hexagonal Glow Gold Bangles</h3>
+        <p>₹2,78,500</p>
+        <button onclick="orderNow('Hexagonal Glow Gold Bangles')">Order Now</button>
+      </div>
+        <div class="product-card">
+        <img src="BAN2.jpg" alt="">
+        <h3>Glimmering Rays Diamond Bangle</h3>
+        <p>₹2,68,500</p>
+        <button onclick="orderNow('Glimmering Rays Diamond Bangle')">Order Now</button>
+      </div>  
+      <div class="product-card">
+        <img src="BAN4.jpg" alt="">
+        <h3>Orbit Knurled Gold Bangle</h3>
+        <p>₹2,78,500</p>
+        <button onclick="orderNow('Orbit Knurled Gold Bangle')">Order Now</button>
+      </div>
+       <div class="product-card">
+        <img src="BAN5.jpg" alt="">
+        <h3>Urbane Yellow Gold Ribbed Bangle</h3>
+        <p>₹2,38,500</p>
+        <button onclick="orderNow('Urbane Yellow Gold Ribbed Bangle')">Order Now</button>
+      </div>
+       <div class="product-card">
+        <img src="BAN6.jpg" alt="">
+        <h3>Flattering Diamond Bangle</h3>
+        <p>₹2,88,500</p>
+        <button onclick="orderNow('Flattering Diamond Bangle')">Order Now</button>
+      </div>
+      
+    </div>
+  </section>
+
+  <script>
+    function orderNow(product) {
+      alert(`You selected: ${product}\nWe will contact you for order confirmation.`);
+    }
+  </script>
+
+</body>
+</html>

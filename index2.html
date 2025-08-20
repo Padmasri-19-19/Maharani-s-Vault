@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+     <nav class="navbar">
+    <div class="logo">
+       <img src="maha.jpeg" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#collection-title">Collections</a></li>
+    </ul>
+  </nav>
+
+  <h1 id="collection-title">Collections</h1>
+  <div class="collection-container" id="collection-items"></div>
+
+  <script>
+    const data = {
+      necklaces: [
+        { name: "Majestic Abstract Necklace", img:"TNECK1.png" ,price: "₹88,500"  },
+        { name: "Opulent Peacock Necklace", img: "TNECK2.png",price: "₹98,678" },
+        { name: "Artistic Grand Necklace", img: "TNECK3.jpg" ,price: "₹1,78,489"},
+        { name: "Yellow Gold Necklace ", img: "TNECK4.jpg" ,price: "₹92,500"},
+      ],
+      rings: [
+        { name: "Delicate Details Gold Ring", img: "TRING1.png" ,price: "₹18,500"},
+        { name: "Sculpted Grace Diamond Ring", img: "TRING2.png",price: "₹79,897" },
+         { name: "Blushing Radiance Diamond Ring", img: "TRING3.png",price: "₹98,342" },
+        { name: "Vintage Charm Diamond Ring", img: "TRING4.png" ,price: "₹81,456"},
+      ],
+      chains: [
+        { name: "Double string chain", img: "TCHAIN6.jpeg" ,price: "₹2,98,385"},
+        { name: "Trio bead gold chain", img: "TCHAIN5.jpeg" ,price: "₹2,38,198"},
+        { name: "Double Layer chain", img: "TCHAIN7.png" ,price: "₹2,88,619"},
+        { name: "Trendy Butterfly chain", img: "TCHAIN8.png",price: "₹2,14,561" },
+        
+      ],
+      bracelets: [
+        { name: "Gleaming Grid Diamond Bracelet", img: "TBRAC1.png" ,price: "₹2,34,239"},
+        { name: "Sparkling Boxes Tennis Bracelet", img: "TBRAC2.png" ,price: "₹2,98,198"},
+        { name: "Twisted Petal Gold Bracelet", img: "TBRAC3.png" ,price: "₹1,56,398"},
+        { name: "Dual Toned Gold Bracelet", img: "TBRAC4.png" ,price: "₹1,29,500"},
+        
+      ],
+      maangtikka : [
+        { name: "Divya Shri Mangtikka", img: "TMANGA1.jpeg" ,price: "₹2,67,289"},
+        { name: "PadmaAura Tikka", img: "TMANGA2.jpeg" ,price: "₹2,90,634"},
+        { name: "Suvarna Lakshmi Tikka", img: "TMANGA3.jpeg" ,price: "₹2,51,900"},
+        { name: "ShreeChakra Mangtikka", img: "TMANGA4.jpeg" ,price: "₹2,89,276"},
+        { name: "Tejasvini Tikka", img: "TMANGA5.jpeg" ,price: "₹2,89,398"},
+        { name: "Aishwarya Padmavati Mangtikka", img: "TMANGA6.jpeg",price: "₹2,13,789" },
+      ],
+      mangalasutra: [
+        { name: "Sunbeam Bloom Gold Mangalsutra", img: "TMANGALA1.png" ,price: "₹2,13,789"},
+        { name: "Radiant Swirl Diamond Mangalsutra ", img: "TMANGALA3.png",price: "₹3,10,361" },
+        { name: "Floral Gold Mangalsutra", img: "TMANGALA4.png" ,price: "₹2,67,218"},
+         { name: "Trinity Touch Gold Mangalsutra", img: "TMANGALA2.png" ,price: "₹2,99,671"},
+      ],
+      viewall: [
+      { name: "Majestic Abstract Necklace", img:"TNECK1.png" ,price: "₹88,500"  },
+        { name: "Opulent Peacock Necklace", img: "TNECK2.png",price: "₹98,678" },
+        { name: "Artistic Grand Necklace", img: "TNECK3.jpg" ,price: "₹1,78,489"},
+        { name: "Yellow Gold Necklace ", img: "TNECK4.jpg" ,price: "₹92,500"},
+        { name: "Delicate Details Gold Ring", img: "TRING1.png" ,price: "₹18,500"},
+        { name: "Sculpted Grace Diamond Ring", img: "TRING2.png",price: "₹79,897" },
+         { name: "Blushing Radiance Diamond Ring", img: "TRING3.png",price: "₹98,342" },
+        { name: "Vintage Charm Diamond Ring", img: "TRING4.png" ,price: "₹81,456"}, 
+         { name: "Double string chain", img: "TCHAIN6.jpeg" ,price: "₹2,98,385"},
+        { name: "Trio bead gold chain", img: "TCHAIN5.jpeg" ,price: "₹2,38,198"},
+        { name: "Double Layer chain", img: "TCHAIN7.png" ,price: "₹2,88,619"},
+        { name: "Trendy Butterfly chain", img: "TCHAIN8.png",price: "₹2,14,561" },
+        { name: "Gleaming Grid Diamond Bracelet", img: "TBRAC1.png" ,price: "₹2,34,239"},
+        { name: "Sparkling Boxes Tennis Bracelet", img: "TBRAC2.png" ,price: "₹2,98,198"},
+        { name: "Twisted Petal Gold Bracelet", img: "TBRAC3.png" ,price: "₹1,56,398"},
+        { name: "Dual Toned Gold Bracelet", img: "TBRAC4.png" ,price: "₹1,29,500"},
+        { name: "Sunbeam Bloom Gold Mangalsutra", img: "TMANGALA1.png" ,price: "₹2,13,789"},
+        { name: "Radiant Swirl Diamond Mangalsutra ", img: "TMANGALA3.png",price: "₹3,10,361" },
+        { name: "Floral Gold Mangalsutra", img: "TMANGALA4.png" ,price: "₹2,67,218"},
+       
+        { name: "Trinity Touch Gold Mangalsutra", img: "TMANGALA2.png" ,price: "₹2,99,671"},
+         { name: "Divya Shri Mangtikka", img: "TMANGA1.jpeg" ,price: "₹2,67,289"},
+        { name: "PadmaAura Tikka", img: "TMANGA2.jpeg" ,price: "₹2,90,634"},
+        { name: "Suvarna Lakshmi Tikka", img: "TMANGA3.jpeg" ,price: "₹2,51,900"},
+        { name: "ShreeChakra Mangtikka", img: "TMANGA4.jpeg" ,price: "₹2,89,276"},
+        { name: "Tejasvini Tikka", img: "TMANGA5.jpeg" ,price: "₹2,89,398"},
+        { name: "Aishwarya Padmavati Mangtikka", img: "TMANGA6.jpeg",price: "₹2,13,789" },
+      ],
+
+    };
+
+     const params = new URLSearchParams(window.location.search);
+    const category = params.get("category");
+    const title = category.charAt(0).toUpperCase() + category.slice(1);
+    document.getElementById("collection-title").textContent = `${title} Collection`;
+
+    const container = document.getElementById("collection-items");
+
+    data[category]?.forEach(item => {
+      const div = document.createElement("div");
+      div.classList.add("item");
+      div.innerHTML = `
+        <img src="${item.img}" alt="${item.name}" />
+        <p><strong>${item.name}</strong></p>
+        <p class="price">Price: ${item.price}</p>
+        <button onclick="orderNow('${item.name}')">Order Now</button>
+      `;
+      container.appendChild(div);
+    });
+
+    function orderNow(itemName) {
+      alert(`Thank you for choosing to order: ${itemName}\nWe will contact you shortly.`);
+    }
+  </script>
+</body>
+</html>

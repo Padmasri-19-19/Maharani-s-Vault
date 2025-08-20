@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo"> 
+      <img src="maha.jpeg" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#earrings">Earrings</a></li>
+    </ul>
+  </nav>
+
+  <section id="earrings" class="section">
+    <h2>Earrings Collection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="EAR1.png" alt="">
+        <h3>Breathtaking Onyx Stone Diamond Stud Earrings </h3>
+        <p>₹90,095</p>
+        <button onclick="orderNow('Breathtaking Onyx Stone Diamond Stud Earrings')">Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="EAR2.png" alt="">
+        <h3>Radiant Leaf Diamond Hoop Earrings</h3>
+        <p>₹1,25,147</p>
+        <button onclick="orderNow('Radiant Leaf Diamond Hoop Earrings')">Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="EAR3.png" alt="">
+        <h3>Concentric Beads Drop Earrings</h3>
+        <p>₹1,38,500</p>
+        <button onclick="orderNow('Concentric Beads Drop Earrings')">Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="EAR4.png" alt="">
+        <h3>Galactic Diamond Stud Earrings</h3>
+        <p>₹1,74,278</p>
+        <button onclick="orderNow('Galactic Diamond Stud Earrings')">Order Now</button>
+      </div>
+      <div class="product-card">
+        <img src="EAR5.png" alt="">
+        <h3>Twinkle Dome Diamond Jhumka Earrings</h3>
+        <p>₹1,60,607</p>
+        <button onclick="orderNow('Twinkle Dome Diamond Jhumka Earrings ')">Order Now</button>
+      </div><div class="product-card">
+        <img src="EAR6.png" alt="">
+        <h3>Radiant Geometric Diamond Stud Earrings</h3>
+        <p>₹1,38,500</p>
+        <button onclick="orderNow('Radiant Geometric Diamond Stud Earrings')">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <script>
+    function orderNow(product) {
+      alert(`You selected: ${product}\nWe will contact you for order confirmation.`);
+    }
+  </script>
+
+</body>
+</html>
